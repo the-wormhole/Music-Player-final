@@ -1,0 +1,421 @@
+
+/* general properties*/
+body{
+    margin: 0;
+    margin-top: -20px;
+    background-color: black;
+}   
+.centralise{
+    position: static;
+    left: 15%
+}
+
+:root{
+    --section-color-grey: rgb(158, 158, 158);
+}
+
+.text-center{
+    text-align: center;
+}
+.black{
+    background-color: black; 
+}
+
+.border{
+    border-radius: 1rem;
+    box-shadow: 0px 0px 6px 4px red;
+}
+
+.first::first-letter{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:white;
+}
+a:unvisited{
+    color:white;
+}
+.box{
+    box-sizing: border-box;
+}
+.in-blo{
+    display: inline-block;
+}
+
+
+
+                    /*  Header */
+#body-header{
+    width: 100%;
+    height: 10vh;
+    overflow: hidden;
+}
+.back{
+  width: 100%;
+  height: 80vh;
+}
+#body-header{
+    background-attachment: fixed;
+}
+#nav-bar-and-sign-in{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    box-shadow: -1px 0px 6px 10px rgb(38, 40, 40);
+    background-color: rgb(38, 40, 40);
+}
+#invi-icon{
+  color:red; 
+  color:var(--section-color-grey);
+  margin:30px 20px 20px 40px; 
+  box-shadow: 0px 0px 6px 4px var(--section-color-grey);
+  width: 3% ;
+  height: 6vh;
+  padding-left:0.4%;
+  padding-top: 0.3%;    
+  font-size: 1.7rem;
+}
+#player-name{
+    position: absolute;
+    top: 50%;
+    left:8%;
+    color:var(--section-color-grey);
+}
+#invi-search-bar{
+    padding-left: 6.5%;
+}
+#invi-search-bar form input[type=text]{
+    font-size: 1rem;
+    height: 5vh;
+    width: 20vw;
+    background-size: 0.5vw 1vh;
+    padding-left:20px;
+    background-position: 5px 5px;
+}
+#player-name a{  
+    transition: all 0.5s;
+}
+.text a:hover{
+    border-bottom: 1px solid var(--section-color-grey);
+    /*box-shadow: 0px 0px 6px 4px var(--section-color-grey);*/
+}
+
+        /*Sign in*/
+#sign-in{
+    text-align: right;
+    position: absolute;
+    top:70%;
+    right:5%;
+    transition: border-bottom 1s;
+}
+#profile-pic{
+    position: absolute;
+    top: 50%;
+    right:2%;
+    width: 2.5%;
+    height: 80%;
+}
+#profile-pic img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px black;
+}
+
+
+                /*     Main   */
+main{
+    width: 70%;
+    height: 100%;
+    margin-top: 10vh;
+    padding-left:5%; 
+}
+
+main section{
+    width: 100%;
+    background-color: rgb(38, 40, 40);
+    box-shadow: 0px 0px 6px 1px black;
+}
+
+
+                /* About artist */
+#about-the-artist{
+    height: 65vh;
+    overflow: hidden;
+    position: relative;
+}
+.about{
+    width: 100%;
+    height: 100%;
+}
+.artist-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    padding-top: -10%;
+    background-image: url(https://data.whicdn.com/images/306323988/original.jpg);
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+}
+.colour-variant{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(transparent,rgba(38, 40, 40, 0.83) 100%);
+}
+
+/* info*/
+.info{
+    position: relative;
+    left: 45%;
+    width: 50%;
+    height: 100%;
+    padding-top:10%; 
+    color: rgba(255, 255, 255, 0.59);
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+.info-head{
+    height: 15%;
+    width: 100%;
+    position: relative;
+}
+.name{
+    width: 40%;
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.followers{
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.play-button button[type=button]{
+    width:29%;
+    height: 2rem;
+    color: rgba(255,255,255,0.59);
+    background-image: linear-gradient(rgb(47, 45, 155),rgb(187, 92, 217));
+ /*   box-shadow: 0px 0px 6px 2px black;*/
+}
+                /*    Aside  */
+aside{
+    overflow: hidden;
+    overflow-wrap: break-word;
+    width:20%;
+    vertical-align: top;
+    height: 100vh;
+    margin-top: 10vh;
+    background-color: black;
+}
+.similar-artists{
+    width: 100%;
+    height: 40%;
+    color: rgba(255, 255, 255, 0.59);
+    font-family: monospace;
+}
+.similar-artists-heading{
+    width:100%;
+    height: 10%;
+    position: relative;
+}
+.display-head{  
+    font-size: 1.3rem;
+    position: absolute;
+    left: 4%;
+    top: 20%;
+    color: white;
+}
+.view-all{
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+.similar-songs{
+    width: 100%;
+    height: 90%;
+    margin-top: 2%;
+}
+.song-full{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 2%;
+    display: relative;
+    background-color: rgb(38, 40, 40);
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+.similar-image{
+    margin-left: 2%;
+    width: 30%;
+    height: 100%;
+    background-image: url(https://www.much.com/wp-content/uploads/2017/01/Shape-of-You-Video.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.similar-play{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+/*.play-ico{
+    position: absolute;
+    left:45%;
+    top: 45%;
+}*/
+.similar-play:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+}
+
+.similar-info{
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+.similar-name{
+    width: auto;
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.time{
+    width: auto;
+    position: absolute;
+    right: 2%;
+    top:30%;
+}
+.category{
+    width: auto;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+                /*Songs by him*/
+#songs-by-him{
+    width: 100%;
+    height: 100vh;
+    margin-top: 5%;
+    background-color: black;
+}
+.all-songs{
+    width: 100%;
+    height: 100%;  
+}
+.song{
+    position: relative;
+    height: 15%;
+    width: 100%;
+    margin-top: 2.5%;
+    background-color: rgb(38, 40, 40);
+    color: rgba(255, 255, 255, 0.59);
+}
+
+.song-image{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 10%;
+    height: 80%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#Shape-of-you{
+     background-image: url(https://www.much.com/wp-content/uploads/2017/01/Shape-of-You-Video.jpg);
+}
+#Perfect{
+     background-image: url(https://i.ytimg.com/vi/93d3GKY41Kg/maxresdefault.jpg);
+}
+#Photograph{
+     background-image: url(https://dottolife.com/ksi-content/uploads/2017/11/maxresdefault.jpg);
+}
+#Thinking{
+     background-image: url(https://assets.bigtop40.com/2014/40/ed-sheeran-thinking-out-loud-1412691945-view-1.png);
+}
+#I-dont-care{
+     background-image: url(https://i.ytimg.com/vi/E8EK3dsszw0/maxresdefault.jpg);
+}
+
+.play-song{
+    /*position: absolute;*/
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    color: transparent;
+}
+.play-song:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.play{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+}
+.plus-sign{
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
+.count{
+    position: absolute;
+    left: 2%;
+    top: 45%;
+}
+.song-name{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    color: white;
+    font-size: 1.2rem;
+    font-family:monospace; 
+}
+
+                /* Audio player*/
+
+
+.juke-box{
+    width:0%;
+    position: fixed;
+    top: 91vh;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+audio{
+    width: 100%;
+}
+
+#Shape-of:target{
+    width:100%;
+}
+#Perfec:target{
+    width:100%;
+}
+#Photo:target{
+    width:100%;
+}
+#I-dont:target{
+    width:100%;
+}
+#Think:target{
+    width:100%;
+}

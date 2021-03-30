@@ -1,0 +1,692 @@
+/* general properties*/
+body{
+    margin: 0;
+    margin-top: -20px;
+    background-color: black;
+}   
+.centralise{
+    position: static;
+    left: 15%
+}
+
+:root{
+    --section-color-grey: rgb(158, 158, 158);
+}
+
+.text-center{
+    text-align: center;
+}
+.black{
+    background-color: black; 
+}
+
+.border{
+    border-radius: 1rem;
+    box-shadow: 0px 0px 6px 4px rgb(158, 158, 158);
+}
+
+.first::first-letter{
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color:white;
+}
+a:unvisited{
+    color:white;
+}
+a:active{
+    color: white;
+}
+
+
+
+                    /*  Home */
+.back{
+  width: 100%;
+  height: 80vh;
+}
+#body-header{
+    background-attachment: fixed;
+}
+#back-color{
+background-image: linear-gradient(rgba(0, 0, 0, 0.7),black 120%);
+}
+#back-image{
+    background-image: url(https://education.ket.org/wp-content/uploads/2016/08/4688-1024x576.jpg);
+}
+
+                    /*Main search*/
+#icon{
+    position: absolute;
+    top:20%;
+    left:45%;
+    color:red;
+    color:var(--section-color-grey);
+    font-size: 80px;
+
+    width:100px;
+    height: 100px;
+    padding: 1%;
+}
+
+.text{
+    color:white;
+    font-family: sans-serif;
+}
+#about-player{
+    position: absolute;
+    top:35%;
+    left:29%;
+    font-size:2.5rem;
+}
+
+                        /*Search box*/
+.search form input[type=text]{
+    position: absolute;
+    color: white;
+    top:50%;
+    left:35%;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    border-radius: 25%; 
+    height: 6vh;
+    width: 29vw;
+    transition: box-shadow 1s;
+    background-image: url('data:image/png;base64,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');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 2vw 4vh;
+    padding-left: 45px;
+    outline: none;
+}
+
+#search-bar form input[type=text]:hover{
+     box-shadow: 0px 0px 6px 12px var(--section-color-grey); 
+}
+
+/*Nav bar*/
+#nav-bar-and-sign-in{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    box-shadow: -1px 0px 6px 10px rgb(38, 40, 40);
+    background-color: rgb(38, 40, 40);
+}
+#invi-icon{
+  color:red; 
+  color:var(--section-color-grey);
+  margin:30px 20px 20px 40px; 
+  box-shadow: 0px 0px 6px 4px var(--section-color-grey);
+  width: 3% ;
+  height: 6vh;
+  padding-left:0.4%;
+  padding-top: 0.3%;    
+  font-size: 1.7rem;
+}
+#player-name{
+    position: absolute;
+    top: 50%;
+    left:9%;
+    color:var(--section-color-grey);
+}
+#invi-search-bar form input[type=text]{
+    font-size: 0.8rem;
+    top: 70%;
+    left:15%;
+    height: 2vh;
+    width: 10vw;
+    background-size: 0.5vw 1vh;
+    padding-left:20px;
+    background-position: 5px 5px;
+}
+#player-name a{  
+    transition: all 0.5s;
+}
+.text a:hover{
+    border-bottom: 1px solid var(--section-color-grey);
+    /*box-shadow: 0px 0px 6px 4px var(--section-color-grey);*/
+}
+
+        /*Sign in*/
+#sign-in{
+    text-align: right;
+    position: absolute;
+    top:70%;
+    right:4%;
+    transition: border-bottom 1s;
+}
+#profile-pic{
+    position: absolute;
+    top: 50%;
+    right:1%;
+    width: 2%;
+    height: 80%;
+}
+#profile-pic img{
+    border-radius: 50%;
+    width:100%; 
+    height:70%;
+    box-shadow: 0px 0px 6px 4px black;
+}
+            
+
+
+
+/* Main*/
+main{
+    /*position: sticky;
+    top:10vh;*/
+    display: inline-block;
+    width: 79.7%;
+    height: 100%;
+    padding-left:0;
+    padding-right: 1%;
+    background-color: black;
+}
+
+main section{
+    width:100%;
+    border-radius: 1rem;
+}
+
+/*section:nth-child(1){
+    margin-top: 10px;
+    background-image: linear-gradient(rgba(0,0,0,1), darkgrey 250% ) ;
+    box-shadow: 0px 0px 6px 4px rgba(0,0,0,1);
+}*/
+section{
+     margin-top: 10px;
+}
+                    /* Genre*/
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden; 
+}
+#all-genres{
+    position: relative;
+}
+#all-genres > div{
+    box-sizing: border-box;
+    width:15%;
+    height:10vh;
+    margin:2%;  
+    padding-top:2%;
+    box-shadow: 0px 0px 6px 1px black;
+    overflow-wrap:break-word ;
+    transition: width 0.5s, height 0.5s,box-shadow 0.5s;
+}
+.flex div span a{
+    color:white;
+    font-size: 160%;
+    text-align: center;
+    transition: color 0.8s;
+}
+.flex div span a:hover{
+    color: slategrey;
+}
+.sub-heading{
+    font-size: 1.5rem;
+    border-bottom: 2px solid white;
+    width:auto;
+}
+#all-genres div:hover{
+    width:18%;
+    height: 12vh;
+    box-shadow: 0px 0px 6px 1px lightgrey;
+}
+
+                    /*Popular*/
+#popular{
+    height: 40vh;
+}
+
+.complete{
+   /* max-width: 300px;*/
+    width: 10%;
+    height: 29vh;
+}
+.complete >span{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 
+}
+.singer{
+    height: 64%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 1px black;
+}
+.singer img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.play{
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(51, 48, 48, 0.46);
+}
+.play a{
+            /*play button*/
+color: transparent; 
+font-size: 2rem;
+transition: color 0.5s ease-in-out;
+}
+.singer img:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.singer:hover .play {
+    background-color: rgba(21, 9, 9, 0.69);
+}
+
+.singer:hover .play a{
+    color: rgba(21, 9, 9, 0.69);
+}
+
+
+            /* For you */
+.cen{
+    justify-content: center;
+}
+.yours{
+    height: 56vh;
+    width:23%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin:10px;
+    box-shadow: 0px 0px 6px 1px black; 
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+.yours img{
+    width: 100%;
+    height: 100%;
+}
+.select{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 9, 9, 0.5);
+}
+.pla{
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+.pla a{
+    color:transparent;
+    font-size: 1.5rem;
+}
+.yours:hover .select{
+     background-color: transparent;
+
+}
+.yours:hover{
+ /*   position: absolute;*/
+    height:67.2vh;
+    width: 27.6%;
+}
+.yours:hover .pla a{
+    color: rgba(21, 9, 9, 1);
+}
+
+                /* Aside */
+
+aside{
+ display: inline-block;
+ position: sticky;
+ /*margin-left: -4px;*/
+ top: 10vh;
+ vertical-align: top;
+/* padding-left: 4.6%;*/
+ width: 19%;
+ height: auto;
+ background-image: linear-gradient(black,#313030,black);
+ box-sizing: border-box;
+ color: white;
+ font-family: monospace;
+ overflow: hidden;
+}
+.playlist-container{
+    height: 100%;
+    width:100%;
+}
+.all-lists{
+    height: 80%;
+    width: 100%;
+    font-size: 1.2rem;
+    padding-left: 15%;
+    overflow-wrap: break-word;
+}
+/*.all-lists
+.all-lists details p ul li::before{
+    content: '';
+    display: inline-block;
+    background-image: url('https://www.directlyrics.com/img/upload/shawn-mendes-youth-video.jpg');
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    
+}*/
+.song{
+    width: 100%;
+    height: 40px;
+    background-size: contain;
+    background-repeat:no-repeat;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+.song img{
+    width: 20%;
+    height: 100%;
+}
+.song a{
+    color:darkgrey;
+}
+ol{
+        border-bottom: 1px solid grey;
+}
+li{
+    box-shadow: 0px 0px 6px 2px lightgrey;
+}
+                /*New Releases*/
+#newreleases{
+    width: 100%;    
+    height: 60vh;
+}
+.new{
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+}
+.new-song{
+    width: 40%;
+    height: 40%;
+    box-shadow: 0px 0px 6px 1px slategrey;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    background-color: rgb(38, 40, 40);
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+.new-song > div{
+    display: inline-block;
+}
+.image-container{
+    width: 20%;
+    height: 80%;
+    display: inline-block;
+    position: relative;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+}
+.play-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color:transparent;
+    transition: background-color 0.5s, color 0.5s;
+}
+.image-container:hover .play-image{
+    background-color: rgba(51, 48, 48, 0.46);
+    color:white;
+
+}
+.song-name{
+    width: 70%;
+    height: 80%;
+}
+.song-name span{
+    overflow-wrap: break-word;
+    overflow: hidden;
+    color: lightgrey;
+}
+.three-dot-popup{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    right:70px;
+    padding: 4px;
+    box-sizing: border-box;
+    transition: width 0.5s, height 0.5s;
+}
+/*#three-dot-popup a{
+    color: transparent;
+}*/
+.three-dot-popup:target{
+    width: 25%;
+    height: auto;
+    background-color: white;
+}
+.three-dot-popup a div{
+    width:10%;
+    color:slategrey;
+
+}
+.three-dot-popup a {
+   border-bottom: 1px solid slategrey;
+}
+
+                /* Journey */
+
+#journey-based{
+    margin-top:2%; 
+    height: 20vh;
+    margin-bottom: 10%;
+}
+
+.journey{
+    width:100%;
+    height: 100%;
+    justify-content: center;
+}
+.blow-image{
+    width:23%;
+    height:90%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    margin-right:2%; 
+    transition: background-size 0.2s;
+}
+.journey-colour{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+/*Images*/
+
+#Party-image{
+    background-image: url(https://3.imimg.com/data3/DK/AF/MY-15406128/fresher-party-music-500x500.png);
+}
+#Elec-image{
+    background-image: url(https://legismusic.com/wp-content/uploads/2016/09/musica-electronica-sin-copyright-1.jpg);
+}
+#Road-image{
+    background-image: url(https://www.stylemotivation.com/wp-content/uploads/2019/08/countries-drive-from-india-cover2-1280x720.jpg);
+}
+/*Gradients*/
+#Party{
+    background-image: linear-gradient(rgba(241, 141, 21, 0.7),rgba(232, 31, 133, 0.7));
+}
+#Electronic{
+    background-image: linear-gradient(rgba(121, 202, 250, 0.7),rgba(33, 88, 241, 0.75));
+}
+#Road-trip{
+    background-image: linear-gradient(rgba(163, 151, 214, 0.73),rgba(114, 89, 140, 0.75));
+}
+/*Animation*/
+
+.blow-image:hover{
+   background-size: 120% 120%;
+}
+
+
+                /* Audio player*/
+
+
+.juke-box{
+    width:0%;
+    position: fixed;
+    top: 91vh;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+audio{
+    width: 100%;
+}
+
+#song-being-played:target{
+    width:100%;
+}
+
+
+
+/* Responsiveness*/
+@media screen and (max-width: 1295px){
+    main{
+    width: 100%;
+    height: 100%;
+    padding-left:0;
+    padding-right: 1%;
+    }
+}
+@media screen and (max-width: 990px){
+    #invi-icon{
+        width: 0%;
+        height: 0%;
+        box-shadow: none;
+        overflow: hidden;
+    }
+    #player-name{
+   /* position: absolute;*/
+    top: 50%;
+    left:5%;
+    /*color:var(--section-color-grey);*/  
+    }
+    #profile-pic img{
+    width:0%; 
+    height:0%;
+    }
+    #about-player{
+    position: absolute;
+    top:35%;
+    left:26%;
+    font-size:2.2rem;
+    }
+    #all-genres > div {
+    width: 20%;
+    height: 10vh;
+    margin: 2%;
+    padding-top: 2%;
+    }
+}
+
+@media screen and (max-width: 650px){
+     #about-player{
+    top:35%;
+    left:24%;
+    font-size:2rem;
+    }
+    #popular {
+    height: 67vh;
+    }
+    .complete {
+    width: 16%;
+    height: 35vh;
+    }
+    .new-song {
+    width: 100%;
+    height: 25%;
+    box-sizing: border-box;
+    padding: 0px;
+    }
+    #newreleases {
+    width: 100%;
+    height: 100vh;
+    }
+     .yours {
+    height: 56vh;
+    width: 80%;
+    margin: 10px;
+    transition: height 0.5s, width 0.5s;
+    }
+    .yours:hover{
+    height: 63vh;
+    width: 90%;
+    }
+}
+
+@media screen and (max-width: 490px){
+      #player-name{
+    top: 50%;
+    left:3%; 
+    }
+    #about-player{
+    top:35%;
+    left:20%;
+    font-size:2rem;
+    }
+    #all-genres > div {
+    width: 25%;
+    height: 10vh;
+    margin: 2%;
+    padding-top: 2%;
+    }
+     #popular {
+    height: 110vh;
+    }
+     .complete {
+    width: 20%;
+    height: 60vh;
+    }
+
+    .yours {
+    height: 56vh;
+    width: 80%;
+    margin: 10px;
+    transition: height 0.5s, width 0.5s;
+    }
+    .yours:hover{
+    height: 63vh;
+    width: 90%;
+    }
+}
+@media screen and (max-width: 350px){
+    #about-player{
+    top:35%;
+    left:18%;
+    font-size:1.5rem;
+    }
+    #player-name{
+    top: 50%;
+    left:0%; 
+    }
+}
