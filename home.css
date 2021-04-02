@@ -55,10 +55,11 @@ a:active{
     background-attachment: fixed;
 }
 #back-color{
-background-image: linear-gradient(rgba(0, 0, 0, 0.7),black 120%);
+background-image: linear-gradient(rgba(0, 0, 0, 0),black 120%);
 }
 #back-image{
-    background-image: url(WallpaperDog-20441470.jpg);
+    background-image: url(./WallpaperDog-20441470.jpg);
+    background-size: 100vw 80vh;
 }
 
                     /*Main search*/
